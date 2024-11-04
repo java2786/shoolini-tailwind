@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'xs': '320px',
+                },
+              colors: {
+                demo: 'blue',
+                demo2: {
+                    100: '#cffafe',
+                    200: '#a5f3fc',
+                    300: '#67e8f9',
+                    400: '#22d3ee',
+                    500: '#06b6d4',
+                    600: '#0891b2',
+                    700: '#0e7490',
+                    800: '#155e75',
+                    900: '#164e63',
+                },
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- typography, border, color -->
+    <p class="border-2 rounded-[15px] border-[black] mx-8 mb-4 mt-2 p-4 underline text-3xl font-bold text-blue-600 text-center">Welcome to tailwind CSS</p>
+    <p class="text-[gray]">A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
+
+    <!-- Flex -->
+    <div class="border-4 border-[red] p-4 flex justify-between">
+        <p class="border-2 border-[black]"><a href="#">One</a></p>
+        <p class="border-2 border-[black]"><a href="#">Two</a></p>
+        <p class="border-2 border-[black]"><a href="#">Three</a></p>
+        <p class="border-2 border-[black]"><a href="#">Four</a></p>
+    </div>
+
+
+    <!-- Grid -->
+     <div class="mt-[25px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  md:text-[yellow] sm:text-[white] xs:text-[black] text-[blue]">
+        <div class="bg-blue-200 p-4 text-[24px]">Item 1</div>
+        <div class="bg-blue-300 p-4 text-[24px]">Item 2</div>
+        <div class="bg-blue-400 p-4 text-[24px]">Item 3</div>
+        <div class="bg-blue-600 p-4 text-[24px]">Item 4</div>
+     </div>
+</body>
+</html>
